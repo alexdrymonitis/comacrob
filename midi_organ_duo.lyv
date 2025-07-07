@@ -4,9 +4,9 @@
 \group \right1 \left1 \pedal1
 
 % create the staves in the performer's score
-\right2 sendto 192.168.6.200
-\left2 sendto 192.168.6.200
-\pedal2 sendto 192.168.6.200
+\right2 sendto % write here the static IP of the performer’s computer
+\left2 sendto % write here the static IP of the performer’s computer
+\pedal2 sendto % write here the static IP of the performer’s computer
 
 \group \right2 \left2 \pedal2
 
@@ -14,38 +14,50 @@
 \nn setup 9010
 
 \listmidiports
-\right1 midiport 1
+\right1 midiport 1 % open the desired MIDI port for all staves of the computer-controlled instrument
 \left1 midiport 1
 \pedal1 midiport 1
 
-\right1 midichan 3
+\right1 midichan 3 % open the desired MIDI channels for all staves of the computer-controlled instrument
 \left1 midichan 2
 \pedal1 midichan 8
 
 \right2 fullscreen on
 \right2 cursor hide
-\right2 size 14
+\right2 size 14 % increase the font size for the performere if desired
 
-% open some stops
+% open some stops, determine which stops you want to open, the ones below are just an example
 \pgmchange 1 3 2
 \pgmchange 1 1 2
 \pgmchange 1 2 2
 \pgmchange 1 8 0
 
+% if you want to use a clicktrack (one is provided as a Pure Data patch in this repository)
+% execute the group of lines below
 \osc pd
 \pd setup 127.0.0.1 9001
-
 \function sendbeat {
     \pd send /beat \beatcount
 }
-\barcount show
 \sendbeat bind beat
 
-\nn send /generate 4 "drymonitis" 1 15 8 "r"
-\nn send /generate 4 "polymeneas" 14 30 8 "r"
-\nn generate 4 20
+\barcount show
 
+% generate content by providing the following arguments
+% number of bars to generate as a loop
+% name of composer (actually LiveLily file, .lyv)
+% can't remember, have to check
+% approximate number of notes for computer-controlled instrument
+% approximate number of notes for human performer
+% (optional) "r" character for recursively using AI model's output to generate consecutive bars
+\nn send /generate 4 "composer-name" 1 15 8 "r"
+% execute the line below if you want the AI model to generate music based on its previous output
+% arguments are
+% nuber of bars
+% approximate number of notes for computer-controlled instrument
+% approximate number of notes for human performer
+\nn generate 4 20 10
+
+% when done, quit the Python script
 \nn send /quit 1
-
-\nn send /loopnname -1
 
