@@ -15,8 +15,8 @@
 \left midichan 2
 \pedal midichan 3
 
-\nn send /generate 4 "drymonitis" 21 30 "r"
-\nn send /generate 4 20
+\nn send /generate 4 "composer-name" 21 30 "r"
+\nn send /generate 4 20 10
 \nn send /barlines 4 30 "r" \barlines \nn1
 \nn send /quit 1
 
