@@ -1,0 +1,25 @@
+\score show
+\score animate
+\insts right left pedal
+\group \right \left \pedal
+
+\osc nn
+\nn setup 9010
+
+\listmidiports
+\right midiport 1
+\left midiport 1
+\pedal midiport 1
+
+\right midichan 1
+\left midichan 2
+\pedal midichan 3
+
+\nn send /generate 4 "drymonitis" 21 30 "r"
+\nn send /generate 4 20
+\nn send /barlines 4 30 "r" \barlines \nn1
+\nn send /quit 1
+
+\play
+\stop
+
