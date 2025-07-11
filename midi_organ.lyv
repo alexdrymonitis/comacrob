@@ -1,5 +1,5 @@
-\score show
-\score animate
+\score.show
+\score.animate
 % create the staves for the instruments
 \insts right left pedal
 % group them is you want
@@ -7,18 +7,18 @@
 
 % create an OSC client for the AI model
 \osc nn
-\nn setup 9010
+\nn.setup 9010
 
 % list your MIDI ports and open the port you want for all staves
 \listmidiports
-\right midiport 1 % change port number if necessary
-\left midiport 1
-\pedal midiport 1
+\right.midiport 1 % change port number if necessary
+\left.midiport 1
+\pedal.midiport 1
 
 % open the MIDI channels you want for each staff
-\right midichan 1
-\left midichan 2
-\pedal midichan 3
+\right.midichan 1
+\left.midichan 2
+\pedal.midichan 3
 
 % to generate music content with Notochord, send the followint arguments
 % number of bars to generate as a loop
@@ -27,19 +27,18 @@
 % approximate number of notes for computer-controlled instrument
 % approximate number of notes for human performer
 % (optional) "r" character for recursively using AI model's output to generate consecutive bars
-\nn send /generate 4 "composer-name" 21 30 "r"
+\nn.send /generate 4 "composer-name" 21 30 "r"
 
 % execute the line below if you want the AI model to generate music based on its previous output
 % arguments are
 % nuber of bars
 % approximate number of notes for computer-controlled instrument
 % approximate number of notes for human performer
-\nn send /generate 4 20 10
-
-% quit the Python script before quitting LiveLily
-\nn send /quit 1
+\nn.send /generate 4 20 10
 
 % play or stop the score
 \play
 \stop
 
+% quit the Python script before quitting LiveLily
+\nn.send /quit 1
