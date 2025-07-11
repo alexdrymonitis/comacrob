@@ -1,6 +1,6 @@
 # COMACROB
 
-This repository contains code used in the "Composing for Acoustic Robots" postdoc research of Alexandros Drymonitis, with the acronym COMACROB. Details on this research can be found here https://journal.computermusic.org.au/chroma/article/view/21.
+This repository contains code used in the "Composing for Acoustic Robots" postdoc research of Alexandros Drymonitis, with the acronym COMACROB. Details on this research can be found [here](https://journal.computermusic.org.au/chroma/article/view/21).
 
 To use this code, you must have LiveLily installed on your system. Currently the "develop" branch is used, found [here](https://github.com/alexdrymonitis/LiveLily/tree/develop). LiveLily is written in openFrameworks, which you can get from [here](https://openframeworks.cc/).
 You will also need Notochord, which you can get [here](https://github.com/Intelligent-Instruments-Lab/notochord). Notochord is a Python-based AI model written with PyTorch, so you will need both Python and PyTorch on your system. This is a trained model, so you don't need to train it yourself.
