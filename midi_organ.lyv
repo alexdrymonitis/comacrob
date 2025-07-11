@@ -20,6 +20,12 @@
 \left.midichan 2
 \pedal.midichan 3
 
+% open some stops, determine which stops you want to open, the ones below are just an example
+\pgmchange 1 3 2
+\pgmchange 1 1 2
+\pgmchange 1 2 2
+\pgmchange 1 8 0
+
 % to generate music content with Notochord, send the followint arguments
 % number of bars to generate as a loop
 % name of composer (actually LiveLily file, .lyv)
