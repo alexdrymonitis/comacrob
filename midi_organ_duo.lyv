@@ -51,6 +51,7 @@
 % approximate number of notes for human performer
 % (optional) "r" character for recursively using AI model's output to generate consecutive bars
 \nn send /generate 4 "composer-name" 1 15 8 "r"
+
 % execute the line below if you want the AI model to generate music based on its previous output
 % arguments are
 % nuber of bars
@@ -58,6 +59,9 @@
 % approximate number of notes for human performer
 \nn generate 4 20 10
 
+% play or stop the score
+\play
+\stop
+
 % when done, quit the Python script
 \nn send /quit 1
-
