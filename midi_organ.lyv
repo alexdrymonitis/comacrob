@@ -26,6 +26,17 @@
 \pgmchange 1 2 2
 \pgmchange 1 8 0
 
+% if you want to use a clicktrack (one is provided as a Pure Data patch in this repository)
+% execute the group of lines below
+\osc pd
+\pd.setup 127.0.0.1 9001
+\function sendbeat {
+    \pd send /beat \beatcount
+}
+\sendbeat.bind beat
+
+\barcount show
+
 % to generate music content with Notochord, send the followint arguments
 % number of bars to generate as a loop
 % name of composer (actually LiveLily file, .lyv)
