@@ -1,0 +1,198 @@
+\score.show
+\insts right left pedal
+
+\bar 1 {
+    \tempo 4 = 50
+    \time 4/4
+    \right aes''4.( g''8-.) r4 <g'' a'' bes''>4
+    \left clef bass r1
+    \pedal clef bass r1
+}
+
+\bar 2 {
+    \tempo 4 = 50
+    \time 4/4
+    \right bes'2 r2
+    \left clef bass <g a>4 fis8 g8 a4 ees4
+}
+
+\bar 3 {
+    \tempo 4 = 50
+    \time 2/4
+    \right a'4. r8
+    \left bes4. r8
+}
+
+\bar 4 {
+    \tempo 4 = 50
+    \time 5/8
+    \right bes'4. r4
+    \left <b a>4.( fis4)
+}
+
+\bar 5 {
+    \tempo 4 = 50
+    \time 3/8
+    \right r4.
+    \left g4( a8)
+}
+
+\bar 6 {
+    \tempo 4 = 50
+    \time 3/8
+    \right g''4.
+}
+
+\bar 7 {
+    \tempo 4 = 50
+    \time 4/4
+    \right <g'' a'' bes''>1
+}
+
+\bar 8 {
+    \tempo 4 = 50
+    \time 3/4
+    \right g''4-- fis''8 c''8 g''8 a''8
+}
+
+\bar 9 {
+    \tempo 4 = 50
+    \time 7/8
+    \right fis''8 e''8 g''8 c''8 fis''4.--
+}
+
+\bar 10 {
+    \tempo 4 = 50
+    \time 2/4
+    \right <f'' e'''>2
+    \left r8 cis'4.
+    \pedal clef bass r8 fis,8 g,8 a,8
+}
+
+\bar 11 {
+    \tempo 4 = 50
+    \time 2/4
+    \right <f'' e'''>2
+    \left c'4 b4
+    \pedal fis,2
+}
+
+\bar 12 {
+    \tempo 4 = 50
+    \time 1/4
+    \right <f'' g'' e'''>4
+}
+
+\bar 13 {
+    \tempo 4 = 50
+    \time 4/4
+    \right g''1
+}
+
+\bar 14 {
+    \tempo 4 = 50
+    \time 7/8
+    \right g''4 <a'' bes''>4. aes''4
+}
+
+\bar 15 {
+    \tempo 4 = 60
+    \time 3/4
+    \right a''2.
+    \left r2 r8 <bes, a>8
+}
+
+\bar 16 {
+    \tempo 4 = 60
+    \time 4/4
+    \right a''4. g''8 r4 <g'' a'' bes''>4
+}
+
+\bar 17 {
+    \tempo 4 = 60
+    \time 2/4
+    \right r4 \tuplet 3/2 {fis'4 d''8}
+    \left \tuplet 3/2 {r4 g8~} g4
+    \pedal r4 \tuplet 3/2 {r4 aes,8}
+}
+
+\bar 18 {
+    \tempo 4 = 60
+    \time 2/4
+    \right <fis' d''>4 a''4
+    \left g2
+    \pedal aes,2
+}
+
+\bar 19 {
+    \tempo 4 = 60
+    \time 2/4
+    \right aes''8 g''8 \tuplet 7/4 {b''16 e''16 b'16 g'16 f'16 e'16 bes16}
+}
+
+\bar 20 {
+    \tempo 4 = 60
+    \time 3/4
+    \right r16 <b' f'' bes''>8.~ <b' f'' bes''>4 a''4
+    \left c4.( dis8) r4
+}
+
+\bar 21 {
+    \tempo 4 = 60
+    \time 3/4
+    \right <b' f'' bes''>4 r8 <b' f'' bes''>8 <c'' g'' b''>8 <d'' gis'' cis'''>8
+    \left dis16 c16 cis16 fis,16 r8 <g c'>8 <fis d'>8 <gis cis'>8
+    \pedal r4 bes,,4.( a,,8)
+}
+
+\bar 22 {
+    \tempo 4 = 60
+    \time 2/4
+    \right aes''8 <cis'' c'''>8 <d'' b''>8 <cis'' g'' cis'''>8
+    \left aes8 c'8 cis'8 <c' g>8
+}
+
+\bar 23 {
+    \tempo 4 = 60
+    \time 3/4
+    \right g''4( aes16 b16 aes'8~) aes'4
+    \left g2.
+    \pedal r4 r8. aes,16~ aes,4
+}
+
+\bar 24 {
+    \tempo 4 = 60
+    \time 3/4
+    \right r4 r16 d''8.~ d''4
+    \left r4 r16 <aes ees'>8.~ <aes ees'>8 r8
+    \pedal aes,8 g,8 a,4~ a,8 r8
+}
+
+\bar 25 {
+    \tempo 4 = 60
+    \time 11/8
+    \right d''8 cis''8 d''8 b'8 c''4. r2
+    \left ees'8 e'8 ees'8 f'8 fis'4. r2
+}
+
+\bar 26 {
+    \tempo 4 = 60
+    \time 5/8
+    \right r4 <g'' a'' bes''>4.
+}
+
+\bar 27 {
+    \tempo 4 = 60
+    \time 5/8
+    \right aes''8 r8 <g'' a'' bes''>4.
+    \left aes8 r8 r4.
+    \pedal aes,8( g,8) r4.
+}
+
+\bar 28 {
+    \tempo 4 = 60
+    \time 13/4
+    \right g''2.~ g''2 c''8 d''8 [ees''8 d''8 b'8 cis''8 d''8]*2 r2
+    \left clef treble r2 c'8 d'8 [ees'8 d'8 b8 cis'8 d'8]*4
+    \pedal ees8 d8 b,8 cis8 d8 ees8 d8 b,8 cis8 d8 ees8 d8 b,8 cis8 d8 ees8 d8 b,8 cis8 d8 r2.
+}
