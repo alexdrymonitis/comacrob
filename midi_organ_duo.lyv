@@ -41,7 +41,7 @@
 }
 \sendbeat.bind beat
 
-\barcount show
+\score.barcount show
 
 % generate content by providing the following arguments
 % number of bars to generate as a loop
