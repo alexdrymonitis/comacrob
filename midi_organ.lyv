@@ -35,7 +35,7 @@
 }
 \sendbeat.bind beat
 
-\barcount show
+\score.barcount show
 
 % to generate music content with Notochord, send the followint arguments
 % number of bars to generate as a loop
