@@ -1,7 +1,7 @@
 \score.show
 \score.animate
 % create the staves for the instruments
-\insts right left pedal
+\insts.init right left pedal
 % group them is you want
 \group \right \left \pedal
 
