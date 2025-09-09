@@ -1,6 +1,6 @@
 \score.show
 \score.animate
-\insts right1 left1 pedal1 right2 left2 pedal2
+\insts.init right1 left1 pedal1 right2 left2 pedal2
 \group \right1 \left1 \pedal1
 
 % create the staves in the performer's score
