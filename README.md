@@ -1,8 +1,8 @@
 # COMACROB
 
-This repository contains code used in the "Composing for Acoustic Robots" postdoc research of Alexandros Drymonitis, with the acronym COMACROB. Details on this research can be found [here](https://journal.computermusic.org.au/chroma/article/view/21).
+This repository contains code used in the "Composing for Acoustic Robots" postdoc research of Alexandros Drymonitis, with the acronym COMACROB. Details on this research can be found [here](https://open-research-europe.ec.europa.eu/articles/5-216).
 
-To use this code, you must have LiveLily installed on your system. Currently the "develop" branch is used, found [here](https://github.com/alexdrymonitis/LiveLily/tree/develop). LiveLily is written in openFrameworks, which you can get from [here](https://openframeworks.cc/).
+To use this code, you must have LiveLily installed on your system, which you can find [here](https://github.com/alexdrymonitis/LiveLily). LiveLily is written in openFrameworks, which you can get from [here](https://openframeworks.cc/).
 You will also need Notochord, which you can get [here](https://github.com/Intelligent-Instruments-Lab/notochord). Notochord is a Python-based AI model written with PyTorch, so you will need both Python and PyTorch on your system. This is a trained model, so you don't need to train it yourself.
 
 This code has been written to generate music scores for acoustic instruments. It was written to generate notes for a church organ. It was initially used with a MIDI-controlled church organ that was simultaneously played by an instrumentalist. You can use it with any instrument(s) you like, but you'll need a bit of already composed music for the ensemble you want to use. You will have to write the original music in LiveLily, which is close to the Lilypond language. Check the aeolos.lyv file in the lyv_files directory of this repository to see how LiveLily works. Open this file in LiveLily, and hit Shift+Return on each line to execute it and to see the bars in the score.
